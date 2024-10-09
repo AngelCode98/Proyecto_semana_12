@@ -1,0 +1,272 @@
+/* General */
+body {
+    font-family: 'Dancing Script', cursive;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.5)),
+                url('../img/fondo.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
+nav {
+    font-family: 'Dancing Script', cursive;
+    font-size: 20px;
+    font-weight: 700;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+    background-color: #3d3433; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+nav img {
+    width: 120px;
+    height: auto;
+    border-radius: 20px;
+}
+
+section.nav {
+    display: flex;
+    gap: 150px; 
+}
+
+section.nav a {
+    position: relative;
+    color: #d69f4f;
+    text-decoration: none;
+    font-size: 30px;
+    font-weight: 700;
+    transition: color 0.3s ease;
+}
+
+section.nav a:hover {
+    color: #d69f4f;
+    transform: scale(1.05);
+}
+
+
+section.nav a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 3px;
+    background-color: #d69f4f;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s ease;
+}
+
+section.nav a:hover::after {
+    width: 100%;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    padding: 20px;
+}
+
+.parrafo{
+    font-family: 'Dancing Script', cursive;
+    font-size: 30px;
+    color: #f3edd3;
+    align-items: center;
+    padding: 10px 50px;
+    gap: 20px;
+    border: 2px solid #261a0d;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+h1{
+    text-align: center;
+    color: #d69f4f;
+    font-size: 40px;
+}
+
+
+.cont_img {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+.imagenes {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.imagenes img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.imagenes p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 25px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 10px;
+    border-radius: 5px;
+    z-index: 1; /* Asegura que el texto esté por encima de la imagen */
+}
+
+.imagenes img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    background-color: #261a0d;
+    color: #d69f4f;
+    font-size: 20px;
+}
+
+footer section {
+    margin: 0 200px;
+}
+
+footer p {
+    margin: 0; 
+}
+
+.container_tecnicas {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border: 2px solid #d69f4f;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.tecnica {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.imagen-con-texto {
+    position: relative;
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+
+.tecnica-imagen {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.tecnica-text {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white; 
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 5px;
+    border-radius: 5px;
+    z-index: 1;
+}
+
+h2 {
+    flex: 1;
+    text-align: center;
+    margin: 0;
+    font-size: 40px;
+}
+
+.espacio_texto{
+    text-align: center;
+    color: aliceblue;
+    padding: 20px;
+    border: 2px solid #d69f4f;
+    border-radius: 10px;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.espacio_texto p{
+    font-size: 25px;
+}
+
+.texto_separado{
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    border: 2px solid #d69f4f;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.texto_separado p{
+    font-size: 20px;
+}
+
+
+
+.contenedor {
+    display: flex;
+    height: 100vh;
+}
+
+.imagenes_museo {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 20px;
+}
+
+.imagenes_museo img {
+    width: 40%;
+    height: auto;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.imagenes_museo img:hover {
+    transform: scale(1.05);
+}
+
+.texto {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #333;
+}
+
+.texto h2 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #d69f4f;
+}
+
+.texto li {
+    font-size: 30px;
+    line-height: 1.6;
+    margin: 0;
+}
